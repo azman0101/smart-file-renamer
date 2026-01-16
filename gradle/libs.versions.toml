@@ -16,6 +16,14 @@ kotlin = "2.3.0"
 min_sdk_version = "23"
 nexus_publish = "2.0.0"
 target_sdk_version = "36"
+hilt = "2.51.1"
+room = "2.6.1"
+datastore = "1.1.1"
+navigation_compose = "2.8.5"
+coil = "2.7.0"
+documentfile = "1.0.1"
+lifecycle = "2.8.7"
+coroutines = "1.9.0"
 
 [libraries]
 junit = { module = "junit:junit", version.ref = "junit" }
@@ -29,6 +37,7 @@ androidx_test_ext_junit = { module = "androidx.test.ext:junit", version.ref = "a
 androidx_test_ext_junit_ktx = { module = "androidx.test.ext:junit-ktx", version.ref = "androidx_test_ext" }
 compose-bom = { module = "androidx.compose:compose-bom", version.ref = "compose-bom" }
 compose_material = { module = "androidx.compose.material:material" }
+compose_material3 = { module = "androidx.compose.material3:material3" }
 compose_foundation = { module = "androidx.compose.foundation:foundation" }
 compose_ui = { module = "androidx.compose.ui:ui" }
 compose_ui_tooling = { module = "androidx.compose.ui:ui-tooling" }
@@ -39,7 +48,22 @@ espresso_core = { module = "androidx.test.espresso:espresso-core", version.ref =
 agp = { module = "com.android.tools.build:gradle", version.ref = "agp" }
 kgp = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin" }
 
+hilt_android = { module = "com.google.dagger:hilt-android", version.ref = "hilt" }
+hilt_compiler = { module = "com.google.dagger:hilt-compiler", version.ref = "hilt" }
+room_runtime = { module = "androidx.room:room-runtime", version.ref = "room" }
+room_ktx = { module = "androidx.room:room-ktx", version.ref = "room" }
+room_compiler = { module = "androidx.room:room-compiler", version.ref = "room" }
+datastore_preferences = { module = "androidx.datastore:datastore-preferences", version.ref = "datastore" }
+androidx_navigation_compose = { module = "androidx.navigation:navigation-compose", version.ref = "navigation_compose" }
+coil_compose = { module = "io.coil-kt:coil-compose", version.ref = "coil" }
+androidx_documentfile = { module = "androidx.documentfile:documentfile", version.ref = "documentfile" }
+androidx_lifecycle_runtime_compose = { module = "androidx.lifecycle:lifecycle-runtime-compose", version.ref = "lifecycle" }
+androidx_lifecycle_viewmodel_compose = { module = "androidx.lifecycle:lifecycle-viewmodel-compose", version.ref = "lifecycle" }
+kotlinx_coroutines_android = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "coroutines" }
+
 [plugins]
 detekt = { id = "io.gitlab.arturbosch.detekt", version.ref = "detekt" }
 compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
 nexus-publish = { id = "io.github.gradle-nexus.publish-plugin", version.ref = "nexus_publish" }
+hilt = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }
+kapt = { id = "org.jetbrains.kotlin.kapt", version.ref = "kotlin" }

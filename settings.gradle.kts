@@ -13,13 +13,15 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = ("kotlin-android-template")
+rootProject.name = ("smart-file-renamer")
 
 enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
 
 include(
-    "app",
-    "library-android",
-    "library-compose",
-    "library-kotlin"
+    ":app",
+    ":core:common",
+    ":core:data",
+    ":core:ui",
+    ":feature:browser",
+    ":feature:analyzer"
 )
